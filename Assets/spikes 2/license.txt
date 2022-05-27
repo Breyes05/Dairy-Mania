@@ -1,0 +1,11 @@
+Model Information:
+* title:	Spikes
+* source:	https://sketchfab.com/3d-models/spikes-8e94c1ed8e6043c584ec23ef7ecf0b17
+* author:	eeeerrr (https://sketchfab.com/angieangieang)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Spikes" (https://sketchfab.com/3d-models/spikes-8e94c1ed8e6043c584ec23ef7ecf0b17) by eeeerrr (https://sketchfab.com/angieangieang) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
