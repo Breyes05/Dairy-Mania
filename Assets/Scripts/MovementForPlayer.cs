@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player_Movement: MonoBehaviour
+public class Player_Movement : MonoBehaviour
 {
-  public float speed = 0;
+    public float speed = 0;
 
-  private Rigidbody rb;
+    private Rigidbody rb;
 
-  private float movementX;
-  private float movementY;
+    private float movementX;
+    private float movementY;
 
 
-  
+
     // Start is called before the first frame update
     void Start()
     {
-      rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
-    public void OnMove (InputValue movementValue)
+
+    public void OnMove(InputValue movementValue)
     {
-        Vector2 movementVector = momentvalue.Get<Vector2>();
+        Vector2 movementVector = movementValue.Get<Vector2>();
 
         movementX = movementVector.x;
         movementY = movementVector.y;
@@ -31,6 +32,6 @@ public class Player_Movement: MonoBehaviour
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
-        rb.AddForce(movement*speed);
+        rb.AddForce(movement * speed);
     }
 }
