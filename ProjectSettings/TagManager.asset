@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerKiller
+  - Respawn_Text
+  - slow
+  - Next level (2)
   layers:
   - Default
   - TransparentFX
