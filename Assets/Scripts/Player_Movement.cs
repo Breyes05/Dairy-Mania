@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MovementForPlayer : MonoBehaviour
+public class Player_Movement : MonoBehaviour
 {
     public float speed = 0;
 
@@ -27,7 +27,6 @@ public class MovementForPlayer : MonoBehaviour
         movementX = movementVector.x;
         movementY = movementVector.y;
     }
-    // Update is called once per frame
     private void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
