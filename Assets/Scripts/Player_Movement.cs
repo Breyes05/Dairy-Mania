@@ -53,26 +53,45 @@ public class Player_Movement : MonoBehaviour
             rb.drag = 10;
         }
 
-        if (other.gameObject.CompareTag("Next Level (2)"))
+        if (other.gameObject.CompareTag("NextLevel"))
         {
             int y = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(y + 1);
         }
+
+
+
+
     }
     public void respwan()
     {
         transform.position = Vector3.zero;
         speed = 20;
         Respawn.gameObject.SetActive(false);
-     }
+    }
 
 
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("slow"))
-            {
+        {
             rb.drag = 3;
 
         }
     }
+
+
+    Scene currentScene = SceneManager.GetActiveScene();
+    
+    
+
+
+
+
+
+
+
+
+
+
 }

@@ -8,6 +8,7 @@ TagManager:
   - Respawn_Text
   - slow
   - Next level (2)
+  - NextLevel
   layers:
   - Default
   - TransparentFX
