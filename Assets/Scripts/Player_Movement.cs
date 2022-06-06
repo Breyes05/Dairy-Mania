@@ -24,6 +24,7 @@ public class Player_Movement : MonoBehaviour
     {
         Respawn.gameObject.SetActive(false);
         rb = GetComponent<Rigidbody>();
+      
     }
 
     public void OnMove(InputValue movementValue)
@@ -79,11 +80,16 @@ public class Player_Movement : MonoBehaviour
 
         }
     }
+<<<<<<< Updated upstream
 
 
     
     
     
+=======
+      
+   
+>>>>>>> Stashed changes
 
 
 
