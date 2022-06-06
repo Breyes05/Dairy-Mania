@@ -5,20 +5,13 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
-
-
 public class Player_Movement : MonoBehaviour
 {
     public float speed = 0;
-
     private Rigidbody rb;
-
     private float movementX;
     private float movementY;
     public Button Respawn;
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +19,6 @@ public class Player_Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
       
     }
-
     public void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
@@ -40,7 +32,6 @@ public class Player_Movement : MonoBehaviour
 
         //rb.AddForce(movement * speed);
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PlayerKiller"))
@@ -59,10 +50,6 @@ public class Player_Movement : MonoBehaviour
             int y = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(y + 1);
         }
-
-
-
-
     }
     public void respwan()
     {
@@ -80,24 +67,4 @@ public class Player_Movement : MonoBehaviour
 
         }
     }
-<<<<<<< Updated upstream
-
-
-    
-    
-    
-=======
-      
-   
->>>>>>> Stashed changes
-
-
-
-
-
-
-
-
-
-
 }
