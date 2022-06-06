@@ -37,7 +37,7 @@ public class Player_Movement : MonoBehaviour
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
-    rb.AddForce(movement * speed);
+        //rb.AddForce(movement * speed);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -81,7 +81,7 @@ public class Player_Movement : MonoBehaviour
     }
 
 
-    Scene currentScene = SceneManager.GetActiveScene();
+    
     
     
 
