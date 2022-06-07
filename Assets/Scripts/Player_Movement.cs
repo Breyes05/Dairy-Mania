@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -12,12 +13,15 @@ public class Player_Movement : MonoBehaviour
     private float movementX;
     private float movementY;
     public Button Respawn;
+    public GameObject winTextObject;
+
     // Start is called before the first frame update
     void Start()
     {
         Respawn.gameObject.SetActive(false);
         rb = GetComponent<Rigidbody>();
-      
+        winTextObject.SetActive(false);
+
     }
     public void OnMove(InputValue movementValue)
     {
@@ -49,6 +53,10 @@ public class Player_Movement : MonoBehaviour
         {
             int y = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(y + 1);
+        }
+        if (other.gameObject.CompareTag("Finish"))
+        {
+          winTextObject.SetActive(true);
         }
     }
     public void respwan()
